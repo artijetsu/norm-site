@@ -5,188 +5,84 @@ body{
     background-repeat: no-repeat;
     backdrop-filter: blur(100px);
     padding: 2%;
+
+.banner {
+    background-color: rgba(245, 245, 245, 0.041);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    padding: 20px;
+    color: white;
+    border: 1px solid rgba(245, 245, 245, 0.418);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.171);
+    margin-bottom: 20px;
 }
 
-.glass{
-    background-color:rgba(245, 245, 245, 0.226) ;
-    border-radius: 30px;
-    backdrop-filter: blur(20px);
-    border: 2px solid rgba(255, 255, 255, 0.336);
-    padding: 1.2%;
-}
-
-a,p,h1,h2,h3,button,input{
-    font-family: "Roboto Condensed", sans-serif;
-    text-decoration: none;
-}
-
-header{
-    width: 100%;
+.inside {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    height: 51px;
 }
 
-header .left{
-    width: 20%;
+.left-ins {
+    flex: 1;
 }
 
-.search{
+.tags {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.tags p {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 5px 10px;
+    border-radius: 15px;
+    margin: 0;
+}
+
+.btns {
     display: flex;
     align-items: center;
     gap: 15px;
-    background-color: rgba(245, 245, 245, 0.192);
-    backdrop-filter: blur(12px);
-    border-radius: 40px;
-    padding: 0 20px;
+    margin-top: 20px;
+}
+
+.btns a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
     color: white;
-    border: 1px solid rgba(245, 245, 245, 0.418);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.171);
-}
-
-.search p{
-    font-weight: 500;
-    color: rgba(255, 255, 255, 0.747);
-}
-
-header .right{
-    height: 100%;
-    width: 77%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-header .right nav {
-    width: 70%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    border-radius: 40px;
-    justify-content: space-between;
-    align-content: center;
-    margin-right: 5%;
-}
-
-header .right nav a{
-    display: flex;
-    align-items: center;
-    border-radius: 40px;
-    padding: 0 20px;
-    color: white;
-    justify-content: center;
-    align-content: center;
-    height: 51px;
-    font-weight: 500;
+    padding: 10px 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
     transition: all 0.3s ease;
-    border: 1px solid transparent;
 }
 
-header .right nav .active{
-    background-color: rgba(245, 245, 245, 0.089);
-    backdrop-filter: blur(4px);
+.btns a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.trands {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.trand-card1, .trand-card2, .trand-card3, .trand-card4 {
+    background-color: rgba(245, 245, 245, 0.041);
+    backdrop-filter: blur(12px);
+    border-radius: 15px;
+    padding: 15px;
+    color: white;
     border: 1px solid rgba(245, 245, 245, 0.418);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.171);
-}
-
-header .right nav a:hover{
-    background-color: rgba(245, 245, 245, 0.089);
-    border: 1px solid rgba(245, 245, 245, 0.418);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.171);
-}
-
-.notification{
-    border-radius: 90px;
-    width: 51px;
-    height: 51px;
-    background-color: rgba(245, 245, 245, 0.089);
-    backdrop-filter: blur(4px);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.171);
-    border: 1px solid transparent;
-    transition: all 0.2s ease;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-}
-
-.notification:hover{
-    border: 1px solid rgba(245, 245, 245, 0.418);
-}
-
-.notification .fa-bell{
-    color: whitesmoke;
-    font-size: 17px;
-}
-
-header .right .user{
-    height: 100%;
-    background-color: rgba(245, 245, 245, 0.089);
-    backdrop-filter: blur(4px);
-    width: 18%;
-    border-radius: 100px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    color: whitesmoke;
-    padding: 0 8px;
-    cursor: pointer;
-}   
-
-header .right .user img{
-    border-radius: 15px;
 }
 
-.nick-cont{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.trands-play-btn {
+    background-color: rgba(255, 255, 255, 0.356);
+    backdrop-filter: blur(10px);
+    padding: 13px 11px;
+    border-radius: 100px;
+    color: white;
 }
-
-.nick-cont .nick{
-    margin: 0;
-    font-weight: 500;
-    font-size: 19px;
-}
-
-.nick-cont .tag{
-    margin: 0;
-    font-weight: 300;
-    font-size: 15px;
-    color: rgb(255, 255, 255);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
